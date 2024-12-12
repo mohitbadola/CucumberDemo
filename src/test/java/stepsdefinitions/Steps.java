@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.time.Duration; 
+import java.time.Duration;
 
 public class Steps {
 
@@ -48,6 +48,7 @@ public class Steps {
         boolean welcomeTxt = driver.findElement(By.xpath("//h2[normalize-space()='My Account']")).isDisplayed();
         Assert.assertTrue(welcomeTxt);
         driver.quit();
+        
     }
 
 
